@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stopwatch</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <h3>STOP WATCH</h3>
+      <div>
+        <h2 id="min">0</h2>
+        <h2>:</h2>
+        <h2 id="sec">0</h2>
+        <h6 class="dot">:</h6>
+        <h2 id="msec">00</h2>
+      </div>
+
+      <br />
+
+      <div>
+        <button
+          style="
+            background-color: aqua;
+            color: black;
+            border-radius: 2px;
+            width: 100px;
+          "
+          id="sB"
+          onclick="start()"
+        >
+          START
+        </button>
+        <button
+          style="
+            background-color: aqua;
+            color: black;
+            border-radius: 2px;
+            width: 100px;
+          "
+          id="sB"
+          onclick="pause()"
+        >
+          PAUSE
+        </button>
+        <button
+          style="
+            background-color: aqua;
+            color: black;
+            border-radius: 2px;
+            width: 100px;
+          "
+          id="sB"
+          onclick="stop()"
+        >
+          STOP
+        </button>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
